@@ -1,0 +1,64 @@
+$base-color: #67444E;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+  margin: 0px;
+  width: 100vw;
+  font-family: 'Poppins';
+}
+
+
+.container {
+  background: url('../res/bg.png') no-repeat center fixed;     
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+
+  .slide {
+    scroll-snap-align: start;
+
+    height: 100vh;
+    width: 100vw;
+  
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .btn {
+    background-color: rgb(0,0,0,0);
+    color: $base-color;
+    border: 1px solid $base-color;
+    
+    transition: 0.3s;
+
+    
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+  .btn:hover{
+    background-color: $base-color;
+    color: #FFFFFF;
+  }
+  .btn-small {
+    height: 12rem;
+    width: 12rem;
+    padding: 20px;
+  }
+  .btn-round {
+    border-radius: 50%;
+  }
+}
+

@@ -1,1 +1,51 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  width: 100vw;
+  font-family: "Poppins";
+}
+
+.container {
+  background: url("../res/bg.png") no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.container .slide {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.container .btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: #67444E;
+  border: 1px solid #67444E;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.container .btn:hover {
+  background-color: #67444E;
+  color: #FFFFFF;
+}
+.container .btn-small {
+  height: 12rem;
+  width: 12rem;
+  padding: 20px;
+}
+.container .btn-round {
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
