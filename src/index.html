@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled Site</title>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body onload="initialize()" onmousemove="bodyMouseHandler()">
+
+  <div class="container" id="container">
+    <!-- Global Sections -->
+    <!-- Corner Cat -->
+    <div class="corner-cat">
+      <span class="span-im-cat">hi, i'm cat.</span>
+      <img src="./res/dancingcat.gif" class="img-dancing-cat">
+    </div>
+    <!-- slide1 -->
+    <div id="slide1" class="slide">
+
+      <!-- Angel X Mikko -->
+      <img src="./res/title-center.png" class="img-title-image" />
+
+      <!-- Cventer Image -->
+      <img src="./res/hug-removebg-preview.png" class="img-hug" />
+
+      <!-- Corner Rings -->
+      <img src="./res/rings.png" class="img-corner-rings" />
+
+      <!-- Navi Panel -->
+      <div class="navi-panel">
+        <div class="line-brown"></div>
+        <button class="btn btn-small btn-round ff-poppins-light" onclick="scrollToSection('slide2')">
+          C L I C K&nbsp&nbspM E
+        </button>
+        <div class="line-brown"></div>
+      </div>
+    </div>
+    <!-- /slide1 -->
+
+    <!-- slide2 -->
+    <div id="slide2" class="slide">
+      <!-- Center Group -->
+      <div class="center-group">
+        <button class="btn btn-large btn-round btn-align-left">
+          <div class="ff-poppins text-large">
+            Here's for you,<br>
+            Mikko
+          </div>
+          <div class="ff-poppins-light text-medium">
+            (Yes, Click the cute kitty!)
+          </div>
+        </button>
+        <img src="./res/catslide2.png" alt="" srcset="">
+      </div>
+      <!-- Navi Panel -->
+      <div class="navi-panel centered">
+        <button class="btn btn-regular ff-poppins-light" onclick="scrollToSection('slide1')">
+          Let's go back?
+        </button>
+        <button class="btn btn-regular ff-poppins-light" onclick="scrollToSection('slide3')">
+          To the next!
+        </button>
+      </div>
+    </div>
+    <!-- /slide2 -->
+    <!-- slide3 -->
+    <div id="slide3" class="slide">
+      <!-- Center Group -->
+      <div class="center-group">
+        <img src="./res/catslide3.png" alt="" srcset="">
+        <button class="btn btn-large btn-round btn-align-left">
+          <div class="ff-poppins text-large">
+            Let’s take a trip down memory lane.
+          </div>
+        </button>
+
+      </div>
+      <!-- Navi Panel -->
+      <div class="navi-panel centered">
+        <button class="btn btn-regular ff-poppins-light" onclick="scrollToSection('slide2')">
+          Let's go back?
+        </button>
+        <button class="btn btn-regular ff-poppins-light" onclick="scrollToSection('slide4')">
+          To the next!
+        </button>
+      </div>
+    </div>
+    <!-- /slide3 -->
+    <!-- slide4 -->
+    <div id="slide4" class="slide">
+      <!-- Center Group -->
+      <div class="center-group">
+        <button class="btn btn-large btn-round">
+          <div class="ff-poppins-light text-large">
+            Guess what?
+          </div>
+        </button>
+        <img src="./res/catslide4.png" alt="" srcset="">
+      </div>
+      <!-- Navi Panel -->
+      <div class="navi-panel centered">
+        <button class="btn btn-regular ff-poppins-light" onclick="scrollToSection('slide3')">
+          Let's go back?
+        </button>
+      </div>
+    </div>
+    <!-- /slide4 -->
+    <!-- slide5 -->
+    <div id="slide5" class="slide">
+      <!-- Center Group -->
+      <div class="center-group">
+        <img src="./res/catslide5.png" alt="" srcset="">
+      </div>
+    </div>
+    <!-- /slide5 -->
+
+  </div>
+</body>
+
+</html>

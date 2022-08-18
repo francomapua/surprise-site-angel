@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.otf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.otf");
+}
+.ff-poppins {
+  font-family: "Poppins";
+}
+
+.ff-poppins-light {
+  font-family: "Poppins-Light";
+}
+
+.text-large {
+  font-size: 32px;
+  letter-spacing: 7px;
+}
+
+.text-medium {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,14 +34,27 @@ body {
   font-family: "Poppins";
 }
 
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   background: url("../res/bg.png") no-repeat center fixed;
-  background-size: cover;
+  background-size: 100vw 100vh;
   height: 100vh;
   width: 100vw;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
+}
+.container .corner-cat {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  right: 0%;
 }
 .container .slide {
   scroll-snap-align: start;
@@ -26,7 +65,61 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .btn {
+.container .slide .center-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.container .slide .navi-panel {
+  position: absolute;
+  height: 127px;
+  top: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-angelxmikkotext {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.img-corner-rings {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 25vw;
+}
+
+.img-title-image {
+  position: absolute;
+  width: 25vw;
+  left: 20%;
+  bottom: 0;
+}
+
+.img-hug {
+  position: absolute;
+  height: 80vh;
+  width: auto;
+  right: 30%;
+}
+
+.img-dancing-cat {
+  height: 12em;
+}
+
+.span-im-cat {
+  margin-right: -30px;
+  margin-bottom: -80px;
+  color: #67444E;
+  font-family: "Poppins";
+  font-size: 0.5em;
+}
+
+.btn {
   background-color: rgba(0, 0, 0, 0);
   color: #67444E;
   border: 1px solid #67444E;
@@ -37,15 +130,42 @@ body {
   font-size: 16px;
   margin: 4px 2px;
 }
-.container .btn:hover {
+
+.btn:hover {
   background-color: #67444E;
   color: #FFFFFF;
 }
-.container .btn-small {
-  height: 12rem;
-  width: 12rem;
-  padding: 20px;
+
+.btn-regular {
+  height: 62px;
+  width: 180px;
+  margin: 10px;
 }
-.container .btn-round {
+
+.btn-small {
+  height: 127px;
+  width: 127px;
+  font-size: 12px;
+}
+
+.btn-large {
+  height: 500px;
+  width: 500px;
+  font-size: 12px;
+}
+
+.btn-round {
   border-radius: 50%;
+}
+
+.btn-align-left {
+  text-align: left;
+  padding-left: 7%;
+}
+
+.line-brown {
+  height: 1px;
+  background: #67444E;
+  width: 99px;
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */
