@@ -6,12 +6,28 @@
   font-family: "Poppins-Light";
   src: url("../fonts/Poppins-Light.otf");
 }
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../fonts/Poppins-Thin.otf");
+}
+@font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url("../fonts/PlayfairDisplay-Italic.otf");
+}
 .ff-poppins {
   font-family: "Poppins";
 }
 
 .ff-poppins-light {
   font-family: "Poppins-Light";
+}
+
+.ff-poppins-thin {
+  font-family: "Poppins-Thin";
+}
+
+.ff-playfairdisplay-italic {
+  font-family: "PlayfairDisplay-Italic";
 }
 
 .text-large {
@@ -111,6 +127,15 @@ body {
   height: 12em;
 }
 
+.img-clickable {
+  cursor: pointer;
+}
+
+.img-gallery {
+  height: 100%;
+  width: auto;
+}
+
 .span-im-cat {
   margin-right: -30px;
   margin-bottom: -80px;
@@ -167,5 +192,157 @@ body {
   height: 1px;
   background: #67444E;
   width: 99px;
+  margin: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(144, 62, 62, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: auto;
+  padding: 0;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-letter-container {
+  background: url("../res/letter-background.png") no-repeat center fixed;
+  height: 70vh;
+  width: 700px;
+  padding: 100px 200px;
+  letter-spacing: 2px;
+}
+
+.modal-letter-close-slide-2 {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  cursor: pointer;
+}
+
+.modal-letter-cats {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+  cursor: pointer;
+}
+
+.modal-gallery-container {
+  background: #C8C4C5;
+  height: 70vh;
+  width: 70vw;
+  padding: 100px 200px;
+  letter-spacing: 2px;
+  display: flex;
+}
+
+.modal-gallery-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.gallery-photo-container {
+  height: 263px;
+  width: 282px;
+  margin: 20px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-gallery-close {
+  position: absolute;
+  top: 2%;
+  right: 1.4%;
+  cursor: pointer;
+}
+
+.modal-question-container {
+  background: url("../res/letter-2.png") no-repeat center fixed;
+  height: 70vh;
+  width: 700px;
+  padding: 100px 200px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-question-text {
+  font-size: 36px;
+  color: #67444E;
+  margin: -50px 0px 0px 0px;
+}
+
+.modal-question-answers {
   margin: 20px;
 }/*# sourceMappingURL=style.css.map */

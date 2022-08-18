@@ -13,13 +13,18 @@
 <body onload="initialize()" onmousemove="bodyMouseHandler()">
 
   <div class="container" id="container">
-    <!-- Global Sections -->
+
     <!-- Corner Cat -->
     <div class="corner-cat">
       <span class="span-im-cat">hi, i'm cat.</span>
       <img src="./res/dancingcat.gif" class="img-dancing-cat">
     </div>
-    <!-- slide1 -->
+
+    <!-- Music Toggle -->
+
+    <!-- Modal -->
+
+    <!-- Slides -->
     <div id="slide1" class="slide">
 
       <!-- Angel X Mikko -->
@@ -40,9 +45,6 @@
         <div class="line-brown"></div>
       </div>
     </div>
-    <!-- /slide1 -->
-
-    <!-- slide2 -->
     <div id="slide2" class="slide">
       <!-- Center Group -->
       <div class="center-group">
@@ -55,7 +57,7 @@
             (Yes, Click the cute kitty!)
           </div>
         </button>
-        <img src="./res/catslide2.png" alt="" srcset="">
+        <img src="./res/catslide2.png" class="img-clickable" id="catslide2" alt="" srcset="">
       </div>
       <!-- Navi Panel -->
       <div class="navi-panel centered">
@@ -66,13 +68,50 @@
           To the next!
         </button>
       </div>
+
+      <!-- Modal -->
+      <div id="modal-slide2" class="modal">
+        <div class="modal-content">
+          <div class="modal-letter-container">
+            <div class="modal-body ff-poppins-light">
+              <img src="./res/letter-cancel.png" class="modal-letter-close-slide-2" id="modal-letter-close-slide-2" />
+              <p>
+                Mikko,
+              </p>
+              <p>
+                I'm going to be better for you, this I promise. I will be deserving of you, worthy of you, until every
+                fiber of my being knows it and can scream with pride that I earned the right to be yours.
+              </p>
+              <p>
+                I want to know that I don't have to be afraid of losing you; that I never have to worry how I'll survive
+                without you. When I wake up, I want to start my day knowing I have you. When I close my eyes at night, I
+                want to sleep blissfully knowing I'm yours.
+              </p>
+              <p>
+                I make this vow here and now: I am in love with every inch and curve and perfect imperfection that is
+                you. I thank the universe every day that I am allowed to love you. As of this moment, I will be a calm,
+                understanding love. I will be a love of patience and acceptance. I will wake every day and tell you
+                something about yourself that I love, and I will part from you every night before we sleep reminding you
+                of it. I will spend every moment I have being a compassionate love, a trustworthy love. I will give you
+                my all to make every day together beautiful with joy, love, peacefulness. I will be the love you
+                deserve, the love that communicates and solves problems. I will be the love I can dream of being for you
+                until I can no longer doubt that I can.
+              </p>
+              <p>
+                Yours forever and always, <br>
+                Angel
+              </p>
+              <img src="./res/letter-cats-removebg-preview.png" class="modal-letter-cats" />
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <!-- /slide2 -->
-    <!-- slide3 -->
     <div id="slide3" class="slide">
       <!-- Center Group -->
       <div class="center-group">
-        <img src="./res/catslide3.png" alt="" srcset="">
+        <img src="./res/catslide3.png" class="img-clickable" id="catslide3" alt="" srcset="">
         <button class="btn btn-large btn-round btn-align-left">
           <div class="ff-poppins text-large">
             Let’s take a trip down memory lane.
@@ -89,9 +128,44 @@
           To the next!
         </button>
       </div>
+
+      <!-- Modal -->
+      <div id="modal-slide3" class="modal">
+        <div class="modal-content">
+          <div class="modal-gallery-container">
+            <div class="modal-body ff-poppins-light modal-gallery-body">
+              <img src="./res/letter-cancel.png" class="modal-gallery-close" id="modal-gallery-close" />
+
+              <div class="gallery-photo-container">
+                <img src="./res/gallery1.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery2.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery3.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery4.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery5.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery6.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery7.jpg" class="img-gallery">
+              </div>
+              <div class="gallery-photo-container">
+                <img src="./res/gallery8.jpg" class="img-gallery">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <!-- /slide3 -->
-    <!-- slide4 -->
     <div id="slide4" class="slide">
       <!-- Center Group -->
       <div class="center-group">
@@ -100,7 +174,7 @@
             Guess what?
           </div>
         </button>
-        <img src="./res/catslide4.png" alt="" srcset="">
+        <img src="./res/catslide4.png" class="img-clickable" id="catslide4" alt="" srcset="">
       </div>
       <!-- Navi Panel -->
       <div class="navi-panel centered">
@@ -108,16 +182,37 @@
           Let's go back?
         </button>
       </div>
+
+      <!-- Modal -->
+      <div id="modal-slide4" class="modal">
+        <div class="modal-content">
+          <div class="modal-question-container">
+            <div class="modal-body ff-poppins-light">
+              <img src="./res/cat-roll-transparent.gif" class="modal-question-cats" />
+              <p class="modal-question-text ff-playfairdisplay-italic">
+                will you be my forever?
+              </p>
+              <div class="modal-question-answers">
+                <button class="btn btn-regular ff-poppins-light" onclick="sheSaidYes()">
+                  Yes!
+                </button>
+                <button class="btn btn-regular ff-poppins-light" onclick="sheSaidNo()">
+                  No?
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <!-- /slide4 -->
-    <!-- slide5 -->
     <div id="slide5" class="slide">
       <!-- Center Group -->
       <div class="center-group">
         <img src="./res/catslide5.png" alt="" srcset="">
       </div>
     </div>
-    <!-- /slide5 -->
 
   </div>
 </body>
