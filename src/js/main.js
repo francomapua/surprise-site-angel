@@ -10,12 +10,26 @@ function initialize(){
   document.getElementById('modal-gallery-close').addEventListener('click', () => hideModal('modal-slide3'))
 
   document.getElementById('catslide4').addEventListener('click', () => showModal('modal-slide4'))
+
+  document.getElementById('img-music-play').addEventListener('click', () => toggleMusic())
+  document.getElementById('img-music-pause').addEventListener('click', () => toggleMusic())
+
 }
 
-function bodyMouseHandler(){
-  return
-  if(bgm.paused){
+var isMusicPlaying = false
+function toggleMusic(){
+  console.log('isMusicPlaying', isMusicPlaying);
+  if(!isMusicPlaying){
     bgm.play()
+    document.getElementById('img-music-play').style.display = 'block'
+    document.getElementById('img-music-pause').style.display = 'none'
+    isMusicPlaying = true
+  }
+  else{
+    bgm.pause()
+    document.getElementById('img-music-play').style.display = 'none'
+    document.getElementById('img-music-pause').style.display = 'block'
+    isMusicPlaying = false
   }
 }
 

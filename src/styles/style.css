@@ -62,7 +62,7 @@ body {
   width: 100vw;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 .container .corner-cat {
   position: absolute;
@@ -71,6 +71,15 @@ body {
   align-items: center;
   bottom: 0%;
   right: 0%;
+}
+.container .music-toggle {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  left: 0%;
 }
 .container .slide {
   scroll-snap-align: start;
@@ -275,7 +284,7 @@ body {
 
 .modal-letter-container {
   background: url("../res/letter-background.png") no-repeat center fixed;
-  height: 70vh;
+  height: 80vh;
   width: 700px;
   padding: 100px 200px;
   letter-spacing: 2px;
@@ -345,4 +354,10 @@ body {
 
 .modal-question-answers {
   margin: 20px;
+}
+
+.music-icon {
+  height: 40px;
+  width: auto;
+  margin: 5px;
 }/*# sourceMappingURL=style.css.map */
