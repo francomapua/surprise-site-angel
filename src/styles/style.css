@@ -301,7 +301,7 @@ body {
   background: url("../res/letter-background.png") no-repeat center fixed;
   height: 80vh;
   width: 700px;
-  padding: 100px 200px;
+  padding: 200px 200px;
   letter-spacing: 2px;
 }
 
@@ -314,8 +314,8 @@ body {
 
 .modal-letter-cats {
   position: absolute;
-  bottom: 5%;
-  right: 20%;
+  bottom: 30%;
+  right: 30%;
   cursor: pointer;
 }
 
